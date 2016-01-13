@@ -6654,6 +6654,9 @@ button.close {
 .color-dark {
   color: #000;
 }
+.color-light {
+  color: #fff;
+}
 .width-auto {
   width: auto;
 }
