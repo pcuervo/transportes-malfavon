@@ -7035,6 +7035,9 @@ button.close {
 .no-border-radius {
   border-radius: 0px;
 }
+.border-bottom--secondary {
+  border-bottom: 5px solid #a97d1a;
+}
 @-ms-viewport {
   width: device-width;
 }
