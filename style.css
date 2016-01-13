@@ -6772,11 +6772,17 @@ button.close {
 .color-light {
   color: #fff;
 }
+.bg-primary {
+  background-color: #1b2535;
+}
 .bg-secondary {
   background-color: #a97d1a;
 }
 .bg-tertiary {
   background-color: #43628d;
+}
+.bg-quaternary {
+  background-color: #657b91;
 }
 .bg-quaternary-darker {
   background-color: #2f4361;
@@ -6825,6 +6831,9 @@ button.close {
 }
 .height-100 {
   height: 100%;
+}
+.height-30 {
+  height: 30px;
 }
 .no-padding {
   padding: 0 !important;
