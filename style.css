@@ -6817,6 +6817,9 @@ button.close {
 .width-10 {
   width: 10%;
 }
+.width-300 {
+  width: 300px;
+}
 .height-auto {
   min-height: auto;
 }
