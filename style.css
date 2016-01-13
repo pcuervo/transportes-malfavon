@@ -6793,6 +6793,9 @@ button.close {
 .bg-tertiary {
   background-color: #43628d;
 }
+.bg-quaternary {
+  background-color: #657b91;
+}
 .bg-quaternary-darker {
   background-color: #2f4361;
 }
@@ -6800,7 +6803,7 @@ button.close {
   background-color: #1b1b1b;
 }
 .bg-filter-dark {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .width-auto {
   width: auto;
@@ -6841,8 +6844,13 @@ button.close {
 .height-100 {
   height: 100%;
 }
+<<<<<<< HEAD
 .height-120 {
   height: 120px;
+=======
+.height-30 {
+  height: 30px;
+>>>>>>> e07c6c5e9cdfda6b28563a81f1158d953a54312f
 }
 .no-padding {
   padding: 0 !important;
