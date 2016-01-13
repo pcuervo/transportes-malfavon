@@ -95,11 +95,16 @@
 // Color
 // -------------------------
 
+.color-primary{color:@primary}
+.color-secondary{color:@secondary}
+.color-tertiary{color:@tertiary}
+
 .color-dark{color: @gray-base;}
 .color-light{color: @light;}
 
 // Background-Color
 // -------------------------
+.bg-darker {  background-color: @gray-darker;}
 .bg-filter-dark {background-color: rgba(0, 0, 0, 0.7);}
 
 //Box model
@@ -225,3 +230,17 @@
 // -------------------------
 .no-border{ border: none; }
 .no-border-radius{ border-radius: 0px;}
+
+
+
+
+//shapes
+//-------------
+
+.folder {
+    width: 250px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-left: 0px solid transparent;
+    padding: 5px 10px;
+}
