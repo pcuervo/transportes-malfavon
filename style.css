@@ -6765,6 +6765,9 @@ button.close {
 .color-light {
   color: #fff;
 }
+.bg-tertiary {
+  background-color: #43628d;
+}
 .bg-darker {
   background-color: #1b1b1b;
 }
