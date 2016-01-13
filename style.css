@@ -6765,8 +6765,14 @@ button.close {
 .color-light {
   color: #fff;
 }
+.bg-secondary {
+  background-color: #a97d1a;
+}
 .bg-tertiary {
   background-color: #43628d;
+}
+.bg-quaternary-dark {
+  background-color: #4c617a;
 }
 .bg-darker {
   background-color: #1b1b1b;
@@ -6791,6 +6797,9 @@ button.close {
 }
 .width-60 {
   width: 60%;
+}
+.width-50 {
+  width: 50%;
 }
 .width-30 {
   width: 30%;
@@ -7103,6 +7112,9 @@ button.close {
   border-bottom: 50px solid #43628d;
   border-left: 0px solid transparent;
   border-right: 50px solid transparent;
+}
+.shape .border-round {
+  border-radius: 5px;
 }
 @-ms-viewport {
   width: device-width;
