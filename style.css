@@ -1288,12 +1288,16 @@ h6,
 .h6 {
   font-size: 12px;
 }
+h1 {
+  font-size: 42px;
+}
 p {
+  font-size: 16px;
   margin: 0 0 10px;
 }
 .lead {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 300;
   line-height: 1.4;
 }
@@ -3418,6 +3422,8 @@ fieldset[disabled] .btn-danger.focus {
 }
 .btn-secondary {
   background-color: #a97d1a;
+  letter-spacing: 3px;
+  font-size: 1.2em;
   color: #fff;
   width: 250px;
 }
@@ -3487,7 +3493,7 @@ fieldset[disabled] .btn-link:focus {
   margin: 0 auto;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 10px;
 }
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
@@ -6727,11 +6733,23 @@ button.close {
 .no-decoration {
   text-decoration: none;
 }
+.color-primary {
+  color: #1b2535;
+}
+.color-secondary {
+  color: #a97d1a;
+}
+.color-tertiary {
+  color: #43628d;
+}
 .color-dark {
   color: #000;
 }
 .color-light {
   color: #fff;
+}
+.bg-darker {
+  background-color: #1b1b1b;
 }
 .bg-filter-dark {
   background-color: rgba(0, 0, 0, 0.7);
@@ -7037,6 +7055,13 @@ button.close {
 }
 .border-bottom--secondary {
   border-bottom: 5px solid #a97d1a;
+}
+.folder {
+  width: 250px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-left: 0px solid transparent;
+  padding: 5px 10px;
 }
 @-ms-viewport {
   width: device-width;
