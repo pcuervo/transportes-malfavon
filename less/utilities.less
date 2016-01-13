@@ -160,6 +160,12 @@
 .padding--sides--xsmall{ padding-left: (@padding-base-horizontal/2); padding-right: (@padding-base-horizontal/2); }
 .padding--sides--large{ padding-left: (@padding-base-horizontal*4); padding-right: (@padding-base-horizontal*4); }
 
+.padding--sides--desktop{
+    @media (min-width: @screen-sm) { padding-left: 30%; padding-right: 30%;}
+    @media (min-width: @screen-md) { padding-left: 35%; padding-right: 35%;}
+    @media (min-width: @screen-md) { padding-left: 40%; padding-right: 40%;}
+}
+
 .no-padding--right{ padding-right: 0; }
 .padding--right{ padding-right: (@padding-base-vertical*2); }
 .padding--right--xsmall{ padding-right: (@padding-base-vertical/2); }

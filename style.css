@@ -6882,6 +6882,24 @@ button.close {
   padding-left: 48px;
   padding-right: 48px;
 }
+@media (min-width: 768px) {
+  .padding--sides--desktop {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .padding--sides--desktop {
+    padding-left: 35%;
+    padding-right: 35%;
+  }
+}
+@media (min-width: 992px) {
+  .padding--sides--desktop {
+    padding-left: 40%;
+    padding-right: 40%;
+  }
+}
 .no-padding--right {
   padding-right: 0;
 }
@@ -7275,6 +7293,24 @@ button.close {
 }
 header {
   padding: 12px;
+}
+.menu-desktop a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1b2535;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (min-width: 992px) {
+  .menu-desktop a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.menu-desktop a:hover {
+  border-bottom: 2px solid #a97d1a;
+  text-decoration: none;
 }
 footer {
   background-color: #1b2535;
