@@ -5239,6 +5239,14 @@ a.thumbnail.active {
   padding-left: 0;
   list-style: none;
 }
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.rectangle-large {
+  height: 400px;
+}
 .list-group {
   margin-bottom: 20px;
   padding-left: 0;
@@ -6663,6 +6671,9 @@ button.close {
 }
 .color-dark {
   color: #000;
+}
+.color-light {
+  color: #fff;
 }
 .width-auto {
   width: auto;
