@@ -3476,7 +3476,7 @@ fieldset[disabled] .btn-link:focus {
   margin: 0 auto;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 20px;
 }
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
