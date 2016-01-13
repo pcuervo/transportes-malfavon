@@ -1,3 +1,19 @@
 header{
 	padding: (@padding-base-vertical*2);
 }
+.menu-desktop{
+	& a{
+		font-size: 18px;
+		font-weight: bold;
+		color: @primary;
+		text-transform: uppercase;
+		margin-left: (@margin-base/2); margin-right: (@margin-base/2);
+		@media (min-width: @screen-md) {
+			margin-left: (@margin-base); margin-right: (@margin-base);
+		}
+		&:hover{
+			border-bottom: 2px solid @secondary;
+			text-decoration: none;
+		}
+	}
+}
