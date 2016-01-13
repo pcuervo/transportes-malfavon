@@ -1519,6 +1519,21 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
+.line-height {
+  line-height: 10px;
+}
+.letter-spacing--small {
+  letter-spacing: 1px;
+}
+.word-spacing {
+  word-spacing: 5px;
+}
+.list-inside {
+  list-style-position: inside;
+}
+.list-style-none {
+  list-style-type: none;
+}
 code,
 kbd,
 pre,
@@ -6035,8 +6050,11 @@ button.close {
     width: 900px;
   }
 }
-.modal-menu {
+.modal-menu-movil {
   background-color: #657b91;
+}
+.modal-menu-movil ul {
+  list-style-type: none;
 }
 .tooltip {
   position: absolute;

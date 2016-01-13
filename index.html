@@ -33,7 +33,7 @@
 		<meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
 		<meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
 		<!-- CSS -->
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<!-- Google font(s) -->
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
 		<!-- Font awesome -->
@@ -51,28 +51,17 @@
 	</head>
 	<body>
 		<header>
-			<span class="[ visible-xs ][ pull-right ]">
+			<div class="[ visible-xs ][ pull-right ]">
 				<a type="button" data-toggle="modal" data-target="#modal-header">
 					<img class="[ svg icon icon--iconed icon--stroke icon--thickness-3 ][ color-dark ]" src="icons/navigation.svg">
-					menú
 				</a>
-			</span>
-		</header>
-		<!-- main img -->
-		<div class="[ col-xs-12 ][ bg-image rectangle-large ][ color-light text-shadow ]" style="background-image: url('123.jpg');">
-			<h1>Trasportes Malfavón</h1>
-			<div class="[ btn-absolute-bottom ][ text-center ]">
-				<a href="contacto.html" ><button class="[ btn btn-primary ]">contáctanos</button></a>
 			</div>
-		</div>
-		<footer>
 			<div id="modal-header" class="modal fade" role="dialog">
 				<div class="modal-dialog">
 					<!-- Modal content-->
-					<div class="modal-content modal-menu">
+					<div class="modal-content modal-menu-movil">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Modal Header</h4>
 						</div>
 						<div class="modal-body">
 							<ul>
@@ -87,6 +76,16 @@
 					</div>
 				</div>
 			</div>
+		</header>
+		<!-- main img -->
+		<div class="[ col-xs-12 ][ bg-image rectangle-large ][ color-light text-shadow ]" style="background-image: url('123.jpg');">
+			<h1>Trasportes Malfavón</h1>
+			<div class="[ btn-absolute-bottom ][ text-center ]">
+				<a href="contacto.html" ><button class="[ btn btn-primary ]">contáctanos</button></a>
+			</div>
+		</div>
+		<footer>
+
 		</footer>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
