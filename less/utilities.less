@@ -107,7 +107,7 @@
 
 .bg-secondary{ background-color: @secondary; }
 .bg-tertiary{ background-color: @tertiary;}
-.bg-quaternary-dark{ background-color:@quaternary-dark;}
+.bg-quaternary-darker{ background-color:@quaternary-darker;}
 .bg-darker {  background-color: @gray-darker;}
 .bg-filter-dark {background-color: rgba(0, 0, 0, 0.7);}
 
@@ -250,10 +250,17 @@
 //-------------
 
 .shape {
-    width:300px;
+    width:150px;
     height:10px;
-    border-bottom:50px solid @tertiary;
     border-left:0px solid transparent;
     border-right:50px solid transparent;
+    .padding--top;
+    .margin-left--small;
+
     .border-round{ border-radius: 5px }
-  }
+}
+
+.shape-secondary { border-bottom:50px solid @secondary;}
+.shape-tertiary  { border-bottom:50px solid @tertiary;}
+.shape-quaternary-darker { border-bottom:50px solid @quaternary-darker;}
+
