@@ -3019,7 +3019,7 @@ select[multiple].input-lg {
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 12px;
+  padding: 6px 48px;
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
@@ -3406,6 +3406,10 @@ fieldset[disabled] .btn-danger.focus {
   color: #d9534f;
   background-color: #fff;
 }
+.btn-secondary {
+  background-color: #a97d1a;
+  color: #fff;
+}
 .btn-link {
   color: #337ab7;
   font-weight: normal;
@@ -3466,6 +3470,13 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-block + .btn-block {
   margin-top: 5px;
+}
+.btn-absolute-bottom {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
