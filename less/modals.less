@@ -49,6 +49,7 @@
 
 // Actual modal
 .modal-content {
+  min-height:100vh;
   position: relative;
   background-color: @quaternary;
   border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
@@ -148,14 +149,23 @@
 }
 
 .modal-menu-movil{
-  background-color: @quaternary!important;
-  & ul {list-style-type: none}
-  & li a {
-    text-transform: uppercase;
+  & .modal-header {padding-top: (@padding-base-vertical*6); padding-bottom: 0px;}
+  & ul {
+    list-style-type: none;
+    padding: 0px;
+  }
+  & li {
     text-align: center;
-    padding: (@padding-base-vertical*4) (@padding-base-vertical);
-    & a:hover{
-      background-color: @quaternary-dark;
+    padding-top: (@padding-base-vertical*3); padding-bottom: (@padding-base-vertical*3);
+    border-bottom: 1px solid @light;
+    &:hover{ background-color: @quaternary-dark;}
+    }
+  & a{
+    font-size: 20px;
+    color: @light;
+    text-transform: uppercase;
+    &:hover{
+      text-decoration: none;
     }
   }
 }

@@ -17,7 +17,7 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   white-space: nowrap;
-  .button-size(@padding-base-vertical;(@padding-base-horizontal*4); @font-size-base; @line-height-base; @btn-border-radius-base);
+  .button-size((@padding-base-vertical*1.5); @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
   .user-select(none);
 
   &,
@@ -90,6 +90,7 @@
 .btn-secondary{
   background-color:@secondary;
   color: @light;
+  width: 250px;
 }
 
 
@@ -167,7 +168,7 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    bottom: 20px;
+    bottom: 0;
 }
 
 // Specificity overrides
