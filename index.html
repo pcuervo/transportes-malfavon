@@ -33,7 +33,7 @@
 		<meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
 		<meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
 		<!-- CSS -->
-		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/style.css">
 		<!-- Google font(s) -->
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
 		<!-- Font awesome -->
@@ -54,16 +54,41 @@
 			<span class="[ visible-xs ][ pull-right ]">
 				<a type="button" data-toggle="modal" data-target="#modal-header">
 					<img class="[ svg icon icon--iconed icon--stroke icon--thickness-3 ][ color-dark ]" src="icons/navigation.svg">
+					menú
 				</a>
 			</span>
 		</header>
+		<footer>
+			<div id="modal-header" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content modal-menu">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Modal Header</h4>
+						</div>
+						<div class="modal-body">
+							<ul>
+								<li><a href="index.html" class="[ text-uppercase ][ color-light ]">Inicio</a></li>
+								<li><a href="nosotros.html" class="[ text-uppercase ][ color-light ]">Nosotros</a></li>
+								<li><a href="servicios.html" class="[ text-uppercase ][ color-light ]">Servicios</a></li>
+								<li><a href="flotilla.html" class="[ text-uppercase ][ color-light ]">Flotilla</a></li>
+								<li><a href="cobertura.html" class="[ text-uppercase ][ color-light ]">Cobertura</a></li>
+								<li><a href="contacto.html" class="[ text-uppercase ][ color-light ]">Contacto</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
 		<script>
