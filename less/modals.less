@@ -44,16 +44,15 @@
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
+  margin: 0px;
 }
 
 // Actual modal
 .modal-content {
   position: relative;
-  background-color: @modal-content-bg;
+  background-color: @quaternary;
   border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
   border: 1px solid @modal-content-border-color;
-  border-radius: @border-radius-large;
   .box-shadow(0 3px 9px rgba(0,0,0,.5));
   background-clip: padding-box;
   // Remove focus outline from opened modal
@@ -78,7 +77,6 @@
 // Top section of the modal w/ title and dismiss
 .modal-header {
   padding: @modal-title-padding;
-  border-bottom: 1px solid @modal-header-border-color;
   &:extend(.clearfix all);
 }
 // Close icon
@@ -135,7 +133,7 @@
   // Automatically set modal's width for larger viewports
   .modal-dialog {
     width: @modal-md;
-    margin: 30px auto;
+    margin: 0px;
   }
   .modal-content {
     .box-shadow(0 5px 15px rgba(0,0,0,.5));
@@ -150,9 +148,14 @@
 }
 
 .modal-menu-movil{
-  background-color: @quaternary;
+  background-color: @quaternary!important;
   & ul {list-style-type: none}
-  & li {
-
+  & li a {
+    text-transform: uppercase;
+    text-align: center;
+    padding: (@padding-base-vertical*4) (@padding-base-vertical);
+    & a:hover{
+      background-color: @quaternary-dark;
+    }
   }
 }
