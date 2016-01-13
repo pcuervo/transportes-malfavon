@@ -5907,6 +5907,10 @@ button.close {
   width: 30px !important;
   height: 30px;
 }
+.icon--iconed--medium {
+  width: 35px !important;
+  height: 35px;
+}
 /*------------------------------------*\
   #COLOR
 
@@ -7236,5 +7240,12 @@ button.close {
 }
 header {
   padding: 12px;
+}
+footer {
+  background-color: #1b2535;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #fff;
+  text-align: center;
 }
 /*# sourceMappingURL=bootstrap.css.map */
