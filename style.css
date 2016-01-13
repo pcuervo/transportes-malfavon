@@ -1293,7 +1293,7 @@ h1 {
 }
 @media (min-width: 768px) {
   h1 {
-    font-size: 48px;
+    font-size: 52px;
   }
 }
 p {
@@ -7057,6 +7057,9 @@ button.close {
 }
 .no-border-radius {
   border-radius: 0px;
+}
+.border-bottom--secondary {
+  border-bottom: 5px solid #a97d1a;
 }
 .folder {
   width: 250px;
