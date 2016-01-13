@@ -5973,14 +5973,13 @@ button.close {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
+  margin: 0px;
 }
 .modal-content {
   position: relative;
-  background-color: #fff;
+  background-color: #657b91;
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
@@ -6005,7 +6004,6 @@ button.close {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
 }
 .modal-header .close {
   margin-top: -2px;
@@ -6043,7 +6041,7 @@ button.close {
 @media (min-width: 768px) {
   .modal-dialog {
     width: 600px;
-    margin: 30px auto;
+    margin: 0px;
   }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -6059,10 +6057,18 @@ button.close {
   }
 }
 .modal-menu-movil {
-  background-color: #657b91;
+  background-color: #657b91 !important;
 }
 .modal-menu-movil ul {
   list-style-type: none;
+}
+.modal-menu-movil li a {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 24px 6px;
+}
+.modal-menu-movil li a a:hover {
+  background-color: #4c617a;
 }
 .tooltip {
   position: absolute;
@@ -7177,5 +7183,8 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+header {
+  padding: 12px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
