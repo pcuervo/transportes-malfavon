@@ -6771,8 +6771,8 @@ button.close {
 .bg-tertiary {
   background-color: #43628d;
 }
-.bg-quaternary-dark {
-  background-color: #4c617a;
+.bg-quaternary-darker {
+  background-color: #2f4361;
 }
 .bg-darker {
   background-color: #1b1b1b;
@@ -7104,14 +7104,24 @@ button.close {
   border-bottom: 5px solid #a97d1a;
 }
 .shape {
-  width: 300px;
+  width: 150px;
   height: 10px;
-  border-bottom: 50px solid #43628d;
   border-left: 0px solid transparent;
   border-right: 50px solid transparent;
+  padding-top: 12px;
+  margin-left: 10px;
 }
 .shape .border-round {
   border-radius: 5px;
+}
+.shape-secondary {
+  border-bottom: 50px solid #a97d1a;
+}
+.shape-tertiary {
+  border-bottom: 50px solid #43628d;
+}
+.shape-quaternary-darker {
+  border-bottom: 50px solid #2f4361;
 }
 @-ms-viewport {
   width: device-width;
