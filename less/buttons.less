@@ -57,6 +57,9 @@
       pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
     }
   }
+    @media (min-width: @screen-md-min) {
+    .text-uppercase;
+  }
 }
 
 
@@ -92,7 +95,6 @@
   letter-spacing: 3px;
   font-size: 1.2em;
   color: @light;
-  width: 250px;
 }
 
 
@@ -151,6 +153,10 @@
   .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
 }
 
+.btn-large{  width: 250px;}
+.btn-small{  width: 150px;
+    .padding--top-bottom--xsmall !important;
+}
 
 // Block button
 // --------------------------------------------------
