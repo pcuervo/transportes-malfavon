@@ -7110,6 +7110,9 @@ button.close {
   border-left: 0px solid transparent;
   border-right: 50px solid transparent;
 }
+.shape .border-round {
+  border-radius: 5px;
+}
 @-ms-viewport {
   width: device-width;
 }
