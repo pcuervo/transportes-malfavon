@@ -1180,6 +1180,12 @@ hr {
 body {
   font-family: 'Corbel';
 }
+.typekit-parisine {
+  font-family: "parisine-office-std";
+}
+.typekit-freight {
+  font-family: "freight-sans-pro";
+}
 h1,
 h2,
 h3,
@@ -1302,6 +1308,13 @@ h1 {
   h1 {
     font-size: 52px;
   }
+}
+h1,
+h2 {
+  font-family: 'Corbel-bold';
+}
+strong {
+  font-family: 'Corbel-Bold';
 }
 p {
   font-size: 16px;
