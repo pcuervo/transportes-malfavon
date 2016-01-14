@@ -1,5 +1,5 @@
 header{
-	padding: (@padding-base-vertical*2);
+	padding: (@padding-base-vertical);
 }
 .menu-desktop{
 	& a{
@@ -16,4 +16,8 @@ header{
 			text-decoration: none;
 		}
 	}
+}
+
+.logo{
+	@media (max-width: @screen-sm) { width: 60px; }
 }

@@ -6745,6 +6745,9 @@ button.close {
 .static {
   position: static;
 }
+.top-20 {
+  top: 20px;
+}
 .top-30 {
   top: 30px;
 }
@@ -7415,7 +7418,7 @@ button.close {
   }
 }
 header {
-  padding: 12px;
+  padding: 6px;
 }
 .menu-desktop a {
   font-size: 18px;
@@ -7434,6 +7437,11 @@ header {
 .menu-desktop a:hover {
   border-bottom: 2px solid #a97d1a;
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 60px;
+  }
 }
 footer {
   background-color: #1b2535;
