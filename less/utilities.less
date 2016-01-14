@@ -68,6 +68,7 @@
 
 .top-30{ top: 30px;}
 
+.bottom-50 {bottom: 50px;}
 // Z-index
 .z-index--1{ z-index: 1;}
 .z-index--100{ z-index: 100;}
@@ -155,6 +156,7 @@
 .padding--bottom--large{ padding-bottom: (@padding-base-vertical*4); }
 .padding--bottom--xlarge{ padding-bottom: (@padding-base-vertical*6); }
 .padding--bottom--xxlarge{ padding-bottom: (@padding-base-vertical*8); }
+.padding--bottom--xxxlarge{ padding-bottom: (@padding-base-vertical*10); }
 
 .no-padding--top-bottom{ padding-top: 0; padding-bottom: 0; }
 .padding--top-bottom{ padding-top: (@padding-base-vertical*2); padding-bottom: (@padding-base-vertical*2); }
@@ -169,6 +171,7 @@
 .padding--sides--small{ padding-left: (@padding-base-horizontal); padding-right: (@padding-base-horizontal); }
 .padding--sides--xsmall{ padding-left: (@padding-base-horizontal/2); padding-right: (@padding-base-horizontal/2); }
 .padding--sides--large{ padding-left: (@padding-base-horizontal*4); padding-right: (@padding-base-horizontal*4); }
+.padding--sides--xlarge{ padding-left: (@padding-base-horizontal*6); padding-right: (@padding-base-horizontal*6); }
 
 .padding--sides--desktop{
     @media (min-width: @screen-sm) { padding-left: 30%; padding-right: 30%;}
@@ -183,6 +186,8 @@
 .padding--right--large{ padding-right: (@padding-base-vertical*4); }
 .padding--right--xlarge{ padding-right: (@padding-base-vertical*6); }
 .padding--right--xxlarge{ padding-right: (@padding-base-vertical*8); }
+.padding--right--small--sm{ @media (min-width: @screen-sm) { padding-right: (@padding-base-vertical); } }
+.padding--right--small--md{ @media (min-width: @screen-md) { padding-right: (@padding-base-vertical); } }
 
 .no-padding--left{ padding-left: 0; }
 .padding--left{ padding-left: (@padding-base-vertical*2); }
@@ -190,7 +195,8 @@
 .padding--left--large{ padding-left: (@padding-base-vertical*4); }
 .padding--left--xlarge{ padding-left: (@padding-base-vertical*6); }
 .padding--left--xxlarge{ padding-left: (@padding-base-vertical*8); }
-
+.padding--left--small--sm{ @media (min-width: @screen-sm) { padding-left: (@padding-base-vertical); } }
+.padding--left--small--md{ @media (min-width: @screen-md) { padding-left: (@padding-base-vertical); } }
 
 // Margin
 // -------------------------
@@ -268,7 +274,7 @@
 .shape-quaternary-darker { border-bottom:50px solid @quaternary-darker;}
 
 .line-golden{
-    height:5px; 
-    background-color:@secondary; 
-    border:none; 
+    height:5px;
+    background-color:@secondary;
+    border:none;
 }

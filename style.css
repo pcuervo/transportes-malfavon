@@ -1307,6 +1307,15 @@ p {
   font-size: 16px;
   margin: 0 0 10px;
 }
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+}
+li {
+  font-size: 16px;
+  margin: 0 0 6.66666667px;
+}
 .lead {
   margin-bottom: 20px;
   font-size: 21px;
@@ -3517,7 +3526,7 @@ fieldset[disabled] .btn-link:focus {
   margin: 0 auto;
   left: 0;
   right: 0;
-  bottom: 10px;
+  bottom: 20px;
 }
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
@@ -6739,6 +6748,9 @@ button.close {
 .top-30 {
   top: 30px;
 }
+.bottom-50 {
+  bottom: 50px;
+}
 .z-index--1 {
   z-index: 1;
 }
@@ -6901,6 +6913,9 @@ button.close {
 .padding--bottom--xxlarge {
   padding-bottom: 48px;
 }
+.padding--bottom--xxxlarge {
+  padding-bottom: 60px;
+}
 .no-padding--top-bottom {
   padding-top: 0;
   padding-bottom: 0;
@@ -6948,6 +6963,10 @@ button.close {
   padding-left: 48px;
   padding-right: 48px;
 }
+.padding--sides--xlarge {
+  padding-left: 72px;
+  padding-right: 72px;
+}
 @media (min-width: 768px) {
   .padding--sides--desktop {
     padding-left: 30%;
@@ -6987,6 +7006,16 @@ button.close {
 .padding--right--xxlarge {
   padding-right: 48px;
 }
+@media (min-width: 768px) {
+  .padding--right--small--sm {
+    padding-right: 6px;
+  }
+}
+@media (min-width: 992px) {
+  .padding--right--small--md {
+    padding-right: 6px;
+  }
+}
 .no-padding--left {
   padding-left: 0;
 }
@@ -7004,6 +7033,16 @@ button.close {
 }
 .padding--left--xxlarge {
   padding-left: 48px;
+}
+@media (min-width: 768px) {
+  .padding--left--small--sm {
+    padding-left: 6px;
+  }
+}
+@media (min-width: 992px) {
+  .padding--left--small--md {
+    padding-left: 6px;
+  }
 }
 .no-margin {
   margin: 0 !important;
