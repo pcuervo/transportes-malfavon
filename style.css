@@ -7160,6 +7160,11 @@ button.close {
 .shape-quaternary-darker {
   border-bottom: 50px solid #2f4361;
 }
+.line-golden {
+  height: 5px;
+  background-color: #a97d1a;
+  border: none;
+}
 @-ms-viewport {
   width: device-width;
 }
