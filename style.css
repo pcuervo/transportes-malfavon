@@ -3056,11 +3056,38 @@ select[multiple].input-lg {
     font-size: 12px;
   }
 }
-.form-quaternary {
-  border: none;
-  border-radius: 0px;
+.placeholder-light {
+  /* WebKit */
+  /* Firefox 18- */
+  /* Firefox 19+ */
+  /* IE 10+ */
+}
+.placeholder-light::-webkit-input-placeholder {
+  color: #fff;
+}
+.placeholder-light:-moz-placeholder {
+  color: #fff;
+}
+.placeholder-light::-moz-placeholder {
+  color: #fff;
+}
+.placeholder-light:-ms-input-placeholder {
+  color: #fff;
+}
+.select {
+  width: 100%;
+  height: 30px;
   background-color: #657b91;
-  color: #fff !important;
+  display: block;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.select select {
+  padding: 6px 12px;
+  width: 100%;
+  background-color: transparent;
+  background-image: none;
+  appearance: none;
 }
 .btn {
   display: inline-block;
@@ -6181,7 +6208,8 @@ button.close {
   color: #fff;
   text-transform: uppercase;
 }
-.modal-menu-movil a:hover {
+.modal-menu-movil a:hover,
+.modal-menu-movil a:focus {
   text-decoration: none;
 }
 .tooltip {
@@ -7038,6 +7066,11 @@ button.close {
 .padding--right--xxlarge {
   padding-right: 48px;
 }
+@media (max-width: 768px) {
+  .padding--right--small--xs {
+    padding-right: 6px;
+  }
+}
 @media (min-width: 768px) {
   .padding--right--small--sm {
     padding-right: 6px;
@@ -7060,6 +7093,11 @@ button.close {
 }
 .padding--left--xxlarge {
   padding-left: 48px;
+}
+@media (max-width: 768px) {
+  .padding--left--small--xs {
+    padding-left: 6px;
+  }
 }
 @media (min-width: 768px) {
   .padding--left--small--sm {
