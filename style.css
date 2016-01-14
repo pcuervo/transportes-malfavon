@@ -3043,6 +3043,12 @@ select[multiple].input-lg {
     font-size: 12px;
   }
 }
+.form-quaternary {
+  border: none;
+  border-radius: 0px;
+  background-color: #657b91;
+  color: #fff !important;
+}
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -5304,6 +5310,7 @@ a.thumbnail.active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
 }
 .rectangle-large {
   height: 400px;
@@ -6802,6 +6809,9 @@ button.close {
 .color-light {
   color: #fff;
 }
+.color-gray {
+  color: #555555;
+}
 .bg-primary {
   background-color: #1b2535;
 }
@@ -6971,6 +6981,12 @@ button.close {
   padding-right: 72px;
 }
 @media (min-width: 768px) {
+  .padding--sides--small--sm {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+@media (min-width: 768px) {
   .padding--sides--desktop {
     padding-left: 30%;
     padding-right: 30%;
@@ -7014,11 +7030,6 @@ button.close {
     padding-right: 6px;
   }
 }
-@media (min-width: 992px) {
-  .padding--right--small--md {
-    padding-right: 6px;
-  }
-}
 .no-padding--left {
   padding-left: 0;
 }
@@ -7039,11 +7050,6 @@ button.close {
 }
 @media (min-width: 768px) {
   .padding--left--small--sm {
-    padding-left: 6px;
-  }
-}
-@media (min-width: 992px) {
-  .padding--left--small--md {
     padding-left: 6px;
   }
 }
@@ -7206,6 +7212,25 @@ button.close {
   height: 5px;
   background-color: #a97d1a;
   border: none;
+}
+.content-user img {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.content-user img,
+.content-user p {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .content-user img,
+  .content-user p {
+    width: 33.3333% ;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 @-ms-viewport {
   width: device-width;
@@ -7449,5 +7474,8 @@ footer {
   padding-bottom: 24px;
   color: #fff;
   text-align: center;
+}
+footer p {
+  font-size: 14px;
 }
 /*# sourceMappingURL=bootstrap.css.map */

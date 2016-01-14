@@ -103,6 +103,7 @@
 
 .color-dark{color: @gray-base;}
 .color-light{color: @light;}
+.color-gray{color: @gray;}
 
 // Background-Color
 // -------------------------
@@ -174,6 +175,7 @@
 .padding--sides--large{ padding-left: (@padding-base-horizontal*4); padding-right: (@padding-base-horizontal*4); }
 .padding--sides--xlarge{ padding-left: (@padding-base-horizontal*6); padding-right: (@padding-base-horizontal*6); }
 
+.padding--sides--small--sm{ @media (min-width: @screen-sm) { padding-left: (@padding-base-horizontal); padding-right: (@padding-base-horizontal); }}
 .padding--sides--desktop{
     @media (min-width: @screen-sm) { padding-left: 30%; padding-right: 30%;}
     @media (min-width: @screen-md) { padding-left: 35%; padding-right: 35%;}
@@ -188,7 +190,6 @@
 .padding--right--xlarge{ padding-right: (@padding-base-vertical*6); }
 .padding--right--xxlarge{ padding-right: (@padding-base-vertical*8); }
 .padding--right--small--sm{ @media (min-width: @screen-sm) { padding-right: (@padding-base-vertical); } }
-.padding--right--small--md{ @media (min-width: @screen-md) { padding-right: (@padding-base-vertical); } }
 
 .no-padding--left{ padding-left: 0; }
 .padding--left{ padding-left: (@padding-base-vertical*2); }
@@ -197,7 +198,6 @@
 .padding--left--xlarge{ padding-left: (@padding-base-vertical*6); }
 .padding--left--xxlarge{ padding-left: (@padding-base-vertical*8); }
 .padding--left--small--sm{ @media (min-width: @screen-sm) { padding-left: (@padding-base-vertical); } }
-.padding--left--small--md{ @media (min-width: @screen-md) { padding-left: (@padding-base-vertical); } }
 
 // Margin
 // -------------------------
@@ -279,3 +279,37 @@
     background-color:@secondary;
     border:none;
 }
+
+
+//Content-user
+
+.content-user{
+  & img{
+    margin: auto;
+    .img-responsive;
+  }
+  & img,
+  & p{
+    margin-bottom: (@margin-base);
+    @media (min-width: @screen-sm) {
+      width: 33.3333% ;
+      float: left;
+      padding-right: (@padding-xs-horizontal*3); padding-left: (@padding-xs-horizontal*3);
+
+    }
+  }
+}
+// .content-user--img{
+//    margin-bottom: (@margin-base);
+//   & img{
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     height: 250px;
+//     background-color: rgba(0, 0, 0, 0.6);
+
+//   }
+//   & h2{
+//     color: @light;
+//   }
+// }
