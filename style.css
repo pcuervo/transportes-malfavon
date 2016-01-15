@@ -6793,6 +6793,9 @@ button.close {
 .static {
   position: static;
 }
+.top-10 {
+  top: 10px;
+}
 .top-20 {
   top: 20px;
 }
@@ -7497,7 +7500,7 @@ header {
 }
 @media (max-width: 768px) {
   .logo {
-    width: 60px;
+    width: 40px;
   }
 }
 footer {
