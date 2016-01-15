@@ -1314,6 +1314,7 @@ p {
 }
 li {
   font-size: 16px;
+  font-weight: 300;
   margin: 0 0 6.66666667px;
 }
 @media (min-width: 768px) {
@@ -1592,6 +1593,9 @@ address {
 }
 .fw-300 {
   font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
 }
 .fw-600 {
   font-weight: 600;
