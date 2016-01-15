@@ -6088,11 +6088,12 @@ button.close {
 }
 .modal-dialog {
   position: relative;
-  width: auto;
+  min-width: 100vw;
   margin: 0px;
 }
 .modal-content {
   min-height: 100vh;
+  min-width: 100vw;
   position: relative;
   background-color: #657b91;
   border: 1px solid #999;
