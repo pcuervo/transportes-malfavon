@@ -1304,17 +1304,23 @@ h1 {
   }
 }
 p {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 0 10px;
 }
 @media (min-width: 768px) {
   p {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 li {
   font-size: 16px;
   margin: 0 0 6.66666667px;
+}
+.medium {
+  margin-bottom: 20px;
+  font-size: 19px;
+  letter-spacing: 1.1px;
+  line-height: 1.25;
 }
 .lead {
   margin-bottom: 20px;
@@ -7230,7 +7236,6 @@ button.close {
   border-bottom: 5px solid #a97d1a;
 }
 .shape {
-  width: 150px;
   height: 10px;
   border-left: 0px solid transparent;
   border-right: 50px solid transparent;
@@ -7242,12 +7247,15 @@ button.close {
 }
 .shape-secondary {
   border-bottom: 50px solid #a97d1a;
+  width: 125px;
 }
 .shape-tertiary {
   border-bottom: 50px solid #43628d;
+  width: 150px;
 }
 .shape-quaternary-darker {
   border-bottom: 50px solid #2f4361;
+  width: 155px;
 }
 .line-golden {
   height: 5px;
