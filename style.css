@@ -1322,6 +1322,16 @@ li {
   letter-spacing: 1.1px;
   line-height: 1.25;
 }
+@media (min-width: 992px) {
+  .medium {
+    font-size: 21px;
+  }
+}
+@media (min-width: 1200px) {
+  .medium {
+    font-size: 22.4px;
+  }
+}
 .lead {
   margin-bottom: 20px;
   font-size: 21px;
