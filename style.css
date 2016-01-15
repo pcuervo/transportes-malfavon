@@ -6015,6 +6015,10 @@ button.close {
   width: 35px !important;
   height: 35px;
 }
+.icon--iconed--small {
+  width: 70px !important;
+  height: 80px;
+}
 .icon--iconed--large {
   width: 80px !important;
   height: 80px;
