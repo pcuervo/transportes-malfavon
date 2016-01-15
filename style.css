@@ -1590,6 +1590,12 @@ address {
 .list-style-none {
   list-style-type: none;
 }
+.fw-300 {
+  font-weight: 300;
+}
+.fw-600 {
+  font-weight: 600;
+}
 code,
 kbd,
 pre,
@@ -6928,8 +6934,8 @@ button.close {
 .width-10 {
   width: 10%;
 }
-.width-300 {
-  width: 300px;
+.width-290 {
+  width: 290px;
 }
 .height-auto {
   min-height: auto;
@@ -7112,6 +7118,11 @@ button.close {
     padding-right: 6px;
   }
 }
+@media (min-width: 992px) {
+  .padding--right--small--md {
+    padding-right: 6px;
+  }
+}
 .no-padding--left {
   padding-left: 0;
 }
@@ -7137,6 +7148,11 @@ button.close {
 }
 @media (min-width: 768px) {
   .padding--left--small--sm {
+    padding-left: 6px;
+  }
+}
+@media (min-width: 992px) {
+  .padding--left--small--md {
     padding-left: 6px;
   }
 }
@@ -7196,6 +7212,14 @@ button.close {
 .no-margin-top-bottom {
   margin-top: 0;
   margin-bottom: 0;
+}
+.margin-top-bottom--xsmall {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.margin-top-bottom--small {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .margin-top-bottom {
   margin-top: 20px;
@@ -7259,18 +7283,6 @@ button.close {
 .margin-left--large {
   margin-left: 40px;
 }
-.margin-top-bottom {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.margin-top-bottom--small {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.margin-top-bottom--large {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
 .no-border {
   border: none;
 }
@@ -7283,7 +7295,8 @@ button.close {
 .shape {
   height: 10px;
   border-left: 0px solid transparent;
-  border-right: 50px solid transparent;
+  border-right: 35px solid transparent;
+  margin-bottom: -1px;
   padding-top: 12px;
   margin-left: 10px;
 }
@@ -7291,15 +7304,15 @@ button.close {
   border-radius: 5px;
 }
 .shape-secondary {
-  border-bottom: 50px solid #a97d1a;
+  border-bottom: 35px solid #a97d1a;
   width: 125px;
 }
 .shape-tertiary {
-  border-bottom: 50px solid #43628d;
+  border-bottom: 35px solid #43628d;
   width: 150px;
 }
 .shape-quaternary-darker {
-  border-bottom: 50px solid #2f4361;
+  border-bottom: 35px solid #2f4361;
   width: 155px;
 }
 .line-golden {
@@ -7558,5 +7571,14 @@ footer {
 }
 footer p {
   font-size: 14px;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover,
+footer a:focus,
+footer a:active {
+  color: #a97d1a;
+  text-decoration: none;
 }
 /*# sourceMappingURL=bootstrap.css.map */
