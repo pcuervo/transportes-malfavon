@@ -85,14 +85,21 @@ h1{ font-size: 42px;
 // -------------------------
 
 p {
-  font-size: 16px;
-
-  @media (min-width: @screen-sm) { font-size: 18px;}
+  font-size: 18px;
+  @media (min-width: @screen-sm) { font-size: 19px;}
   margin: 0 0 (@line-height-computed / 2);
 }
+
 li {
   font-size: 16px;
   margin: 0 0 (@line-height-computed / 3);
+}
+
+.medium {
+  margin-bottom: @line-height-computed;
+  font-size: floor((@font-size-base * 1.4));
+  letter-spacing: 1.1px;
+  line-height: 1.25;
 }
 
 .lead {
