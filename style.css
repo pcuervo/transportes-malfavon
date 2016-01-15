@@ -1316,6 +1316,11 @@ li {
   font-size: 16px;
   margin: 0 0 6.66666667px;
 }
+@media (min-width: 768px) {
+  li {
+    font-size: 18px;
+  }
+}
 .medium {
   margin-bottom: 20px;
   font-size: 19px;
