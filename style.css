@@ -7251,25 +7251,6 @@ button.close {
   background-color: #a97d1a;
   border: none;
 }
-.content-user img {
-  margin: auto;
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.content-user img,
-.content-user p {
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-  .content-user img,
-  .content-user p {
-    width: 33.3333% ;
-    float: left;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
 @-ms-viewport {
   width: device-width;
 }
