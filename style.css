@@ -6217,6 +6217,12 @@ button.close {
   text-decoration: none;
 }
 @media (min-width: 480px) and (max-width: 767px) {
+  .modal-menu-movil .modal-header {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
   .modal-menu-movil .modal-body {
     padding-left: 25%;
     padding-right: 25%;
@@ -7508,6 +7514,12 @@ button.close {
 }
 header {
   padding: 6px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  header {
+    padding-left: 15%!important;
+    padding-right: 15%!important;
+  }
 }
 .menu-desktop a {
   font-size: 18px;
