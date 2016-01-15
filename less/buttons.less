@@ -32,7 +32,7 @@
   &:hover,
   &:focus,
   &.focus {
-    color: @btn-default-color;
+    color: @light;
     text-decoration: none;
   }
 
@@ -95,6 +95,12 @@
   letter-spacing: 3px;
   font-size: 1.2em;
   color: @light;
+  &:hover,
+  &:focus,
+  &:active{
+    .transition;
+    background-color: darken(@secondary, 10%);
+  }    
 }
 
 

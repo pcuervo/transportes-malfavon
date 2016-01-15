@@ -3136,7 +3136,7 @@ select[multiple].input-lg {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 .btn:active,
@@ -3511,6 +3511,15 @@ fieldset[disabled] .btn-danger.focus {
   letter-spacing: 3px;
   font-size: 1.2em;
   color: #fff;
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  background-color: #7d5c13;
 }
 .btn-link {
   color: #337ab7;
@@ -7582,6 +7591,10 @@ footer a {
 footer a:hover,
 footer a:focus,
 footer a:active {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   color: #a97d1a;
   text-decoration: none;
 }
