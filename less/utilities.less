@@ -23,7 +23,7 @@
 .pull-left {
   float: left !important;
 }
-
+// .pull-left--xsm {   @media (min-width: 480px) and (max-width: @screen-sm) { float: left !important; }}
 
 // Toggling content
 // -------------------------
@@ -183,6 +183,8 @@
     @media (min-width: @screen-md) { padding-left: 40%; padding-right: 40%;}
 }
 
+.padding--sides--xsm{  @media (min-width: 480px) and (max-width: 767px) {  padding-left: 15%; padding-right: 15%; }}     //Padding xs (480px-768px)
+
 .no-padding--right{ padding-right: 0; }
 .padding--right{ padding-right: (@padding-base-vertical*2); }
 .padding--right--xsmall{ padding-right: (@padding-base-vertical/2); }
@@ -190,7 +192,7 @@
 .padding--right--large{ padding-right: (@padding-base-vertical*4); }
 .padding--right--xlarge{ padding-right: (@padding-base-vertical*6); }
 .padding--right--xxlarge{ padding-right: (@padding-base-vertical*8); }
-.padding--right--small--xs{ @media (max-width: @screen-sm) { padding-right: (@padding-base-vertical); } }
+.padding--right--small--xs{ @media (max-width: 767px) { padding-right: (@padding-base-vertical); } }
 .padding--right--small--sm{ @media (min-width: @screen-sm) { padding-right: (@padding-base-vertical); } }
 
 .no-padding--left{ padding-left: 0; }
@@ -199,7 +201,7 @@
 .padding--left--large{ padding-left: (@padding-base-vertical*4); }
 .padding--left--xlarge{ padding-left: (@padding-base-vertical*6); }
 .padding--left--xxlarge{ padding-left: (@padding-base-vertical*8); }
-.padding--left--small--xs{ @media (max-width: @screen-sm) { padding-left: (@padding-base-vertical); } }
+.padding--left--small--xs{ @media (max-width: 767px) { padding-left: (@padding-base-vertical); } }
 .padding--left--small--sm{ @media (min-width: @screen-sm) { padding-left: (@padding-base-vertical); } }
 
 // Margin
@@ -215,6 +217,8 @@
 .margin-bottom--large{ margin-bottom: (@margin-base*2); }
 .margin-bottom--xlarge{ margin-bottom: (@margin-base*4); }
 .margin-bottom--xxlarge{ margin-bottom: (@margin-base*8); }
+
+.margin-bottom--xsm{ @media (min-width: 480px) and (max-width: 767px) { margin-bottom: @margin-base; } }
 
 .no-margin--top{ margin-top: 0; }
 .margin-top{ margin-top: @margin-base; }
