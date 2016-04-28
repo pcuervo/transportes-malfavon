@@ -5371,6 +5371,24 @@ a.thumbnail.active {
 .rectangle {
   height: 250px;
 }
+.bg-image-home {
+  background-image: url('img/001.png');
+}
+.bg-image-nosotros {
+  background-image: url('img/003.png');
+}
+.bg-image-servicios {
+  background-image: url('img/002.png');
+}
+.bg-image-flotilla {
+  background-image: url('img/001.png');
+}
+.bg-image-cobertura {
+  background-image: url('img/003.png');
+}
+.bg-image-contacto {
+  background-image: url('img/002.png');
+}
 .list-group {
   margin-bottom: 20px;
   padding-left: 0;
