@@ -9,7 +9,7 @@
 	$subject = 'Contacto página Transportes Malvafon';
 	$headers = "From: $name <$email>\r\n";
 	$headers .= "Reply-To: aris@pcuervo.com\r\n";
-	$headers .= "Return-Path: aris@pcuervo.com\r\n";
+	$headers .= "Return-Path: recursoshumanos@larealmichoacana.com.mx\r\n";
 	$headers .= "CC: aris@pcuervo.com\r\n";
 	$headers .= "BCC: aris@pcuervo.com\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
