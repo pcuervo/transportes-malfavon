@@ -3093,6 +3093,11 @@ select[multiple].input-lg {
   background-image: none;
   appearance: none;
 }
+form ul.parsley-errors-list {
+  background: #43628d;
+  list-style: none;
+  padding: 0;
+}
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -6969,6 +6974,9 @@ button.close {
 }
 .height-30 {
   height: 30px;
+}
+.height-80 {
+  height: 80px;
 }
 .no-padding {
   padding: 0 !important;

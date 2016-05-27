@@ -130,28 +130,36 @@
 						<div class="[ hidden-xs ][ margin-bottom--large ]"></div>
 						<h2 class="[ margin-bottom--large ]">Contacto</h2>
 						<div class="[ row ]">
-							<form class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 ]">
-								<div class="[ row ]">
-									<div class="[ col-sm-6 padding--right--small--sm ][ form-group ]">
-										<input type="text" class="[ form-control ][ no-border-radius ]"  placeholder="Nombre">
+							<div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 ]">
+								
+								<form role="form" data-parsley-validate class="[ js-form-contacto ][ js-form-container ]">
+									<div class="[ row ]">
+										<div class="[ col-sm-6 padding--right--small--sm ][ form-group ]">
+											<input type="text" class="[ form-control ][ no-border-radius ]" name="nombre" placeholder="Nombre" data-parsley-error-message="Este campo es obligatorio" required>
+										</div>
+										<div class="[ col-sm-6 padding--left--small--sm ][ form-group ]">
+											<input type="email" class="[ form-control ][ no-border-radius ]" name="correo" data-parsley-type="email" data-parsley-required-message="Este campo es obligatorio" data-parsley-type-message="Por favor ingresa un correo electrónico válido." required>
+										</div>
 									</div>
-									<div class="[ col-sm-6 padding--left--small--sm ][ form-group ]">
-										<input type="email" class="[ form-control ][ no-border-radius ]"  placeholder="Correo">
+									<textarea class="[ form-control ][ no-border-radius ]" rows="4" name="mensaje" placeholder="Mensaje" data-parsley-error-message="Este campo es obligatorio" required></textarea>
+									
+									<button type="submit" class="[ margin-top ][ btn btn-secondary btn-large ]">enviar</button>
+								</form>
+								<!-- Confirmacion formulario -->
+								<div class="[ hidden ][ center-block ][ js-thankyou ]">
+									<p class="[ text-tertiary text-center ]">¡Gracias por contactarnos <span class="[ js-name ]"></span>, te envíaremos respuesta lo antes posible.</p>
+									<p>También puedes contactarnos vía télefonica</p>
+									<div>
+										<img class="[ svg icon icon--iconed--medium icon--stroke icon--thickness-1 ][ color-light ][ margin-bottom--small ]" src="icons/phone-circle.svg">
+										<a href="tel:+525558726600" class="[ color-light ]">
+											<p class="[ no-margin ]">58726600</p>
+										</a>
+										<a href="tel:+018005231320" class="[ color-light ]">
+											<p>01800 523 1320</p>
+										</a>
 									</div>
 								</div>
-								<textarea class="[ form-control ][ no-border-radius ]" rows="4" placeholder="Mensaje"></textarea>
-								<a href=""><button type="submit" class="[ margin-top ][ btn btn-secondary btn-large ]">enviar</button></a>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="[ bg-image rectangle-large ][ color-light ][ hidden ]" style="background-image: url('img/Camiones-1024x768.jpg');">
-				<div class="[ bg-filter-dark ][ width-100 ][ height-100 ]">
-					<div class="[ container ][ text-center ]">
-						<div class="[ row ]">
-							<div class="[ col-xs-12 col-sm-6 col-md-5 col-lg-4 ][ center-full ]">
-								<p class="[ medium ]">Gracias por contactarnos, te enviaremos respuesta lo antes posible.</p>
+
 							</div>
 						</div>
 					</div>
@@ -170,27 +178,37 @@
 					<p>Que  conosca  el área de  transporte  trafico y logística  y administración.</p>
 				</div>
 				<div class="[ col-sm-6 ]">
-					<img class="[ img-responsive ][ margin-bottom--large ]" src="img/0-11.jpg" alt="">
+					<img class="[ img-responsive ][ margin-bottom--large ]" src="img/001sm.png" alt="">
 					<h2 class="[ text-center ]">Envíanos tus datos</h2>
-					<form class="[ text-center ][ margin-bottom--large ]">
+
+					<!-- form Vacantes -->
+					<form class="[ text-center ][ margin-bottom--large ][ js-form-contacto-vacantes ][ js-form-container ]">
 						<div class="[ row ]">
 							<div class="[ col-xs-6 padding--right--small--xs col-sm-12 ][ form-group no-margin ]">
-								<input type="text" class="[ form-control margin-bottom placeholder-light ][ height-30 ][ no-border-radius no-border ][ bg-quaternary ][ color-light ]"  placeholder="Nombre">
+								<input type="text" class="[ form-control margin-bottom placeholder-light ][ height-30 ][ no-border-radius no-border ][ bg-quaternary ][ color-light ]"  placeholder="Nombre" name="nombre" placeholder="Nombre" data-parsley-error-message="Este campo es obligatorio" required>
 							</div>
 							<div class="[ col-xs-6 padding--left--small--xs col-sm-12 ][ form-group no-margin ]">
-								<input type="email" class="[ form-control margin-bottom placeholder-light ][ height-30 ][ no-border-radius no-border ][ bg-quaternary ][ color-light ]"  placeholder="Correo">
+								<input type="email" class="[ form-control margin-bottom placeholder-light ][ height-30 ][ no-border-radius no-border ][ bg-quaternary ][ color-light ]"  placeholder="Correo" name="correo" data-parsley-type="email" data-parsley-required-message="Este campo es obligatorio" data-parsley-type-message="Por favor ingresa un correo electrónico válido." required>
 							</div>
 						</div>
 						<div class="[ select ][ margin-bottom ]">
-							<select class="[ form-control ][ height-30 ][ no-border ][ bg-quaternary ][ color-light ]">
+							<select class="[ form-control ][ height-30 ][ no-border ][ bg-quaternary ][ color-light ]" name="instrument" placeholder="Instrumento" data-parsley-error-message="Por favor selecciona un instrumento" required>
 								<option>Selecciona la vacante de tu intéres</option>
 								<option>Operadores  de  quinta  rueda</option>
 								<option>Auxiliar  administrativo</option>
+								<option>Otro</option>
 							</select>
 						</div>
 						<textarea class="[ form-control placeholder-light ][ no-border-radius no-border ][ bg-quaternary ][ color-light ]" rows="3"  placeholder="Mensaje"></textarea>
 						<a href=""><button type="submit" class="[ text-uppercase ][ margin-top ][ btn btn-secondary bg-primary btn-large ]">enviar</button></a>
 					</form>
+
+					<!-- Confirmacion formulario -->
+					<div class="[ hidden ][ center-block ][ js-thankyou ]">
+						<p class="[ text-tertiary text-center ]">Hemos recibido tus datos <span class="[ js-name ]"></span>,</p>
+						<p>Nos comunicaremos lo antes posible</p>
+					</div>
+
 				</div>
 			</div>
 		</section>
@@ -228,13 +246,27 @@
 		<script src="js/plugins.js"></script>
 		<script>
 			$( document ).ready(function() {
+				
 				/**
 				 * On ready
 				**/
+				
 				imgToSvg();
+				
+				$('.js-form-contacto, .js-form-contacto-vacantes').parsley();
+
+
 				/**
 				 * Triggered events
 				**/
+
+		
+				$('.js-form-contacto, .js-form-contacto-vacantes').on('submit', function(e){
+					e.preventDefault();
+					sendContactEmail( this );
+				});
+
+
 
 			});
 		</script>
