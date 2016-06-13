@@ -5377,7 +5377,7 @@ a.thumbnail.active {
   height: 250px;
 }
 .bg-image-home {
-  background-image: url('img/001.png');
+  background-image: url('img/volvo-home.png');
 }
 .bg-image-nosotros {
   background-image: url('img/003.png');
@@ -6929,6 +6929,9 @@ button.close {
 }
 .bg-filter-dark {
   background-color: rgba(0, 0, 0, 0.6);
+}
+.bg-filter-blue {
+  background-color: rgba(8, 12, 33, 0.5);
 }
 .width-auto {
   width: auto;
