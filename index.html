@@ -146,184 +146,81 @@
 			</div>
 		</section>
 
-		<!-- RUTAS MOVIL-->
-		<section class="[ visible-xs padding--sides--xsm margin-bottom--xsm ]">
-			<h2 class="[ text-center ][ color-tertiary ]">Rutas</h2>
-				<div class="[ shape shape-quaternary-darker ]">
-					<h3 class="[ margin-top-bottom--xsmall margin-left ][ color-light ][ fw-400 ]">Pacífico</h3>
+		<div class="[ container ]">
+			<!-- RUTAS desktop -->
+			<section class="[ row ][ margin-bottom--large ]">
+				<h2 class="[ text-center ][ color-tertiary ]">Rutas</h2>
+				<div class="[ col-sm-4 col-md-2 col-md-offset-3 ]">
+					<div class="[ shape shape-quaternary-darker ]">
+						<h3 class="[ margin-top-bottom--xsmall margin-left ][ color-light ][ fw-400 ]">Pacífico</h3>
+					</div>
 				</div>
-				<div class="[ bg-quaternary-darker ][ color-light ][ padding--top--large ]">
-					<ul class="[ no-margin ][ inline-block ][ list-style-none ]">
-						<li>Guadalajara</li>
-						<li>Mazatlán</li>
-						<li>Culiacán</li>
-						<li>Mochis</li>
-						<li>Cd. Obregón</li>
-					</ul>
-					<ul class="[ no-margin ][ inline-block ][ list-style-none ]">
-						<li>Hermosillo</li>
-						<li>Mexicali</li>
-						<li>Tecate</li>
-						<li>Tijuana</li>
-						<li>Baja California</li>
-					</ul>
+				<div class="[ col-sm-4 col-md-2 ]">
 					<div class="[ shape shape-tertiary ]">
 						<h3 class="[ margin-top-bottom--xsmall margin-left ][ color-light ][ fw-400 ]">Sureste</h3>
 					</div>
 				</div>
-				<div class="[ bg-tertiary ][ color-light ][ padding--top--large ]">
-					<ul class="[ no-margin ][ inline-block ][ list-style-none ]">
-						<li>Veracruz</li>
-						<li>Villahermosa</li>
-						<li>Cd. Hidalgo</li>
-					</ul>
-					<ul class="[ no-margin ][ inline-block ][ list-style-none ]">
-						<li>Merida</li>
-						<li>Cancún</li>
-						<li>Cozumel</li>
-					</ul>
+				<div class="[ col-sm-4 col-md-2 ]">
 					<div class="[ shape shape-secondary ]">
 						<h3 class="[ margin-top-bottom--xsmall margin-left ][ color-light ][ fw-400 ]">Bajío</h3>
 					</div>
 				</div>
-				<div class="[ bg-secondary ][ color-light ][ padding--top--large padding--bottom--large ]">
-					<ul class="[ no-margin ][ inline-block ][ list-style-none ]">
-						<li>Querétaro</li>
-						<li>Cortázar</li>
-					</ul>
-					<ul class="[ no-margin ][ inline-block ][ list-style-none ]">
-						<li>Celaya</li>
-						<li>Aguascalientes</li>
-					</ul>
-				</div>
-			</section> <!-- /RUTAS movil -->
+			</section> <!-- /RUTAS desktop -->
+		</div>
 
-			<div class="[ container ]">
-				<!-- RUTAS desktop -->
-				<section class="[ row ][ hidden-xs ][ margin-bottom--large ]">
-					<h2 class="[ text-center ][ color-tertiary ][ fw-400 ]">Rutas</h2>
-					<div class="[ col-sm-4 ]">
-						<div class="[ shape shape-quaternary-darker ]">
-							<h3 class="[ margin-top-bottom--xsmall margin-left ][ color-light ][ fw-400 ]">Pacífico</h3>
+		<!-- Contacto -->
+		<section class="[ bg-image rectangle-large ][ color-light ]" style="background-image: url('img/Camiones-1024x768.jpg');">
+			<div class="[ bg-filter-dark ][ width-100 ][ height-100 ][ padding--top--large ]">
+				<div class="[ container padding--sides--xsm ]">
+					<h2>Contacto</h2>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 col-sm-4 ][ text-center ][ margin-top--small ]">
+							<form role="form" data-parsley-validate class="[ js-form-contacto ][ js-form-container ]">
+								<div class="[ row ]">
+									<div class="[ col-md-6 padding--right--small--md ][ form-group ]">
+										<input type="text" class="[ form-control ][ no-border-radius ]" name="nombre" placeholder="Nombre" data-parsley-error-message="Este campo es obligatorio" required>
+									</div>
+									<div class="[ col-md-6 padding--left--small--md ][ form-group ]">
+										<input type="email" class="[ form-control ][ no-border-radius ]" name="correo" data-parsley-type="email" data-parsley-required-message="Este campo es obligatorio" data-parsley-type-message="Por favor ingresa un correo electrónico válido." required>
+									</div>
+								</div>
+								<textarea class="[ form-control ][ no-border-radius ]" rows="3" name="mensaje" placeholder="Mensaje" data-parsley-error-message="Este campo es obligatorio" required></textarea>
+								<button type="submit" class="[ margin-top ][ btn btn-secondary width-auto padding--sides--xlarge ]">enviar</button>
+							</form>
+							<!-- Confirmacion formulario -->
+							<div class="[ hidden ][ center-block ][ js-thankyou ]">
+								<p class="[ text-tertiary text-center ]">¡Gracias por contactarnos <span class="[ js-name ]"></span>, te envíaremos respuesta lo antes posible.</p>
+								<p>También puedes contactarnos vía télefonica</p>
+								<div>
+									<img class="[ svg icon icon--iconed--medium icon--stroke icon--thickness-1 ][ color-light ][ margin-bottom--small ]" src="icons/phone-circle.svg">
+									<a href="tel:+525558726600" class="[ color-light ]">
+										<p class="[ no-margin ]">58726600</p>
+									</a>
+									<a href="tel:+018005231320" class="[ color-light ]">
+										<p>01800 523 1320</p>
+									</a>
+								</div>
+							</div>
+
 						</div>
-						<div class="[ bg-quaternary-darker ][ color-light ][ padding--top--large padding--bottom--large ]">
-							<ul class="[ no-padding no-margin ][ inline-block ][ list-style-none ]">
-								<div class="[ col-md-6 padding--left--xlarge no-padding--right ]">
-									<li>Guadalajara</li>
-									<li>Mazatlán</li>
-									<li>Culiacán</li>
-									<li>Mochis</li>
-									<li>Cd. Obregón</li>
-								</div>
-								<div class="[ col-md-6 padding--left--xlarge no-padding--right ]">
-									<li>Hermosillo</li>
-									<li>Mexicali</li>
-									<li>Tecate</li>
-									<li>Tijuana</li>
-									<li>Baja California</li>
-								</div>
-							</ul>
-							<div class="[ shape shape-tertiary ][ visible-xs ]">
-								<h3 class="[ margin-top-bottom--xsmall margin-left ][ color-light ][ fw-400 ]">Sureste</h3>
+
+						<div class="[ hidden-xs ][ color-light ]">
+							<div class="[ col-sm-4 ]">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.892971412042!2d-99.193090654506!3d19.70029920018001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21fe2a291da99%3A0xa435dbbf74964e8c!2sLa+Real+Michoacana!5e0!3m2!1ses!2smx!4v1464036705561"  width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+							<div class="[ col-sm-4 ]">
+								<h3 class="[ large ][ no-margin--top ]">Direccion oficina matriz.</h3>
+								<p>Carretera Cuautitlán Tepotzotlan km 3 s/n, Col. San Mateo Ixtacalco,Cuautitlán Izcalli,  Estado de México, C.P. 54713</p>
 							</div>
 						</div>
-					</div>
-					<div class="[ col-sm-4 ]">
-						<div class="[ shape shape-tertiary ][ hidden-xs ]">
-							<h3 class="[ margin-top-bottom--xsmall margin-left ][ color-light ][ fw-400 ]">Sureste</h3>
-						</div>
-						<div class="[ bg-tertiary ][ color-light ][ padding--top--large padding--bottom--large ]">
-							<ul class="[ no-padding no-margin ][ inline-block ][ list-style-none ]">
-								<div class="[ col-md-6 padding--left--xlarge no-padding--right ]">
-									<li>Veracruz</li>
-									<li>Villahermosa</li>
-									<li>Cd. Hidalgo</li>
-								</div>
-								<div class="[ col-md-6  padding--left--xlarge no-padding--right ]">
-									<li>Merida</li>
-									<li>Cancún</li>
-									<li>Cozumel</li>
-								</div>
-							</ul>
-							<div class="[ shape shape-secondary ][ visible-xs ]">
-								<h3 class="[ margin-top-bottom--xsmall margin-left ][ color-light ][ fw-400 ]">Bajío</h3>
-							</div>
-						</div>
-					</div>
-					<div class="[ col-sm-4 ]">
-						<div class="[ shape shape-secondary ][ hidden-xs ]">
-							<h3 class="[ margin-top-bottom--xsmall margin-left ][ color-light ][ fw-400 ]">Bajío</h3>
-						</div>
-						<div class="[ bg-secondary ][ color-light ][ padding--top--large padding--bottom--large ]">
-							<ul class="[ no-padding no-margin ][ inline-block ][ list-style-none ]">
-								<div class="[ col-md-6 padding--left--xlarge no-padding--right ]">
-									<li>Querétaro</li>
-									<li>Cortázar</li>
-								</div>
-								<div class="[ col-md-6 padding--left--xlarge no-padding--right ]">
-									<li>Celaya</li>
-									<li>Aguascalientes</li>
-								</div>
-							</ul>
-						</div>
-					</div>
-				</section> <!-- /RUTAS desktop -->
+
+					</div> <!-- /row contacto -->
+
+				</div><!-- /conatiner contacto-->
+
 			</div>
 
-
-			<!-- Contacto -->
-			<section class="[ bg-image rectangle-large ][ color-light ]" style="background-image: url('img/Camiones-1024x768.jpg');">
-				<div class="[ bg-filter-dark ][ width-100 ][ height-100 ][ padding--top--large ]">
-					<div class="[ container padding--sides--xsm ]">
-						<h2>Contacto</h2>
-						<div class="[ row ]">
-							<div class="[ col-xs-12 col-sm-4 ][ text-center ][ margin-top--small ]">
-								<form role="form" data-parsley-validate class="[ js-form-contacto ][ js-form-container ]">
-									<div class="[ row ]">
-										<div class="[ col-md-6 padding--right--small--md ][ form-group ]">
-											<input type="text" class="[ form-control ][ no-border-radius ]" name="nombre" placeholder="Nombre" data-parsley-error-message="Este campo es obligatorio" required>
-										</div>
-										<div class="[ col-md-6 padding--left--small--md ][ form-group ]">
-											<input type="email" class="[ form-control ][ no-border-radius ]" name="correo" data-parsley-type="email" data-parsley-required-message="Este campo es obligatorio" data-parsley-type-message="Por favor ingresa un correo electrónico válido." required>
-										</div>
-									</div>
-									<textarea class="[ form-control ][ no-border-radius ]" rows="3" name="mensaje" placeholder="Mensaje" data-parsley-error-message="Este campo es obligatorio" required></textarea>
-									<button type="submit" class="[ margin-top ][ btn btn-secondary width-auto padding--sides--xlarge ]">enviar</button>
-								</form>
-								<!-- Confirmacion formulario -->
-								<div class="[ hidden ][ center-block ][ js-thankyou ]">
-									<p class="[ text-tertiary text-center ]">¡Gracias por contactarnos <span class="[ js-name ]"></span>, te envíaremos respuesta lo antes posible.</p>
-									<p>También puedes contactarnos vía télefonica</p>
-									<div>
-										<img class="[ svg icon icon--iconed--medium icon--stroke icon--thickness-1 ][ color-light ][ margin-bottom--small ]" src="icons/phone-circle.svg">
-										<a href="tel:+525558726600" class="[ color-light ]">
-											<p class="[ no-margin ]">58726600</p>
-										</a>
-										<a href="tel:+018005231320" class="[ color-light ]">
-											<p>01800 523 1320</p>
-										</a>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="[ hidden-xs ][ color-light ]">
-								<div class="[ col-sm-4 ]">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.892971412042!2d-99.193090654506!3d19.70029920018001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21fe2a291da99%3A0xa435dbbf74964e8c!2sLa+Real+Michoacana!5e0!3m2!1ses!2smx!4v1464036705561"  width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-								</div>
-								<div class="[ col-sm-4 ]">
-									<h3 class="[ large ][ no-margin--top ]">Direccion oficina matriz.</h3>
-									<p>Carretera Cuautitlán Tepotzotlan km 3 s/n, Col. San Mateo Ixtacalco,Cuautitlán Izcalli,  Estado de México, C.P. 54713</p>
-								</div>
-							</div>
-
-						</div> <!-- /row contacto -->
-
-					</div><!-- /conatiner contacto-->
-
-				</div>
-
-			</section><!-- / contacto-->
+		</section><!-- / contacto-->
 
 		<footer>
 			<div class="[ container ]">
