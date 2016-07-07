@@ -5392,6 +5392,9 @@ a.thumbnail.active {
   background-image: url('img/kw900.png');
 }
 .bg-image-contacto {
+  background-image: url('img/contacto.png');
+}
+.bg-image-contacto-form {
   background-image: url('img/002.png');
 }
 .list-group {
