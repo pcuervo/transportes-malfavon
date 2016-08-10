@@ -136,7 +136,7 @@
 											<input type="text" class="[ form-control ][ no-border-radius ]" name="nombre" placeholder="Nombre" data-parsley-error-message="Este campo es obligatorio" required>
 										</div>
 										<div class="[ col-sm-6 padding--left--small--sm ][ form-group ]">
-											<input type="email" class="[ form-control ][ no-border-radius ]" name="correo" data-parsley-type="email" data-parsley-required-message="Este campo es obligatorio" data-parsley-type-message="Por favor ingresa un correo electrónico válido." required>
+											<input type="email" class="[ form-control ][ no-border-radius ]" name="correo" placeholder="Correo" data-parsley-type="email" data-parsley-required-message="Este campo es obligatorio" data-parsley-type-message="Por favor ingresa un correo electrónico válido." required>
 										</div>
 									</div>
 									<textarea class="[ form-control ][ no-border-radius ]" rows="4" name="mensaje" placeholder="Mensaje" data-parsley-error-message="Este campo es obligatorio" required></textarea>
@@ -171,9 +171,9 @@
 			<div class="[ row ]">
 				<div class="[ col-sm-6 ]">
 					<h3 class="[ color-primary ]">Operadores  de  quinta  rueda</h3>
-					<p>Con manejo de  maquina  isx  y  volvo  d-13 con r-control  y lic. Federal vigente. Con experiencia  en carga  refrigerada  con equipos  de  termoking  y carrier.</p>
+					<p>Con manejo de maquina ISX y Volvo D-13 con R-Control  y Licencia Federal vigente. Con experiencia en carga refrigerada con equipos de termoking y carrier.</p>
 					<h3 class="[ color-primary ]">Auxiliar  administrativo</h3>
-					<p>Que  conosca  el área de  transporte  trafico y logística  y administración.</p>
+					<p>Que conozca el área de transporte tráfico, logística y administración.</p>
 				</div>
 				<div class="[ col-sm-6 ]">
 					<img class="[ img-responsive ][ margin-bottom--large ]" src="img/001sm.png" alt="">
@@ -183,21 +183,22 @@
 					<form class="[ text-center ][ margin-bottom--large ][ js-form-contacto-vacantes ][ js-form-container ]">
 						<div class="[ row ]">
 							<div class="[ col-xs-6 padding--right--small--xs col-sm-12 ][ form-group no-margin ]">
-								<input type="text" class="[ form-control margin-bottom placeholder-light ][ height-30 ][ no-border-radius no-border ][ bg-quaternary ][ color-light ]"  placeholder="Nombre" name="nombre" placeholder="Nombre" data-parsley-error-message="Este campo es obligatorio" required>
+								<input type="text" class="[ form-control margin-bottom placeholder-light ][ height-30 ][ no-border-radius no-border ][ bg-quaternary ][ color-light ]"  placeholder="Nombre" name="nombre" data-parsley-error-message="Este campo es obligatorio" required>
 							</div>
 							<div class="[ col-xs-6 padding--left--small--xs col-sm-12 ][ form-group no-margin ]">
 								<input type="email" class="[ form-control margin-bottom placeholder-light ][ height-30 ][ no-border-radius no-border ][ bg-quaternary ][ color-light ]"  placeholder="Correo" name="correo" data-parsley-type="email" data-parsley-required-message="Este campo es obligatorio" data-parsley-type-message="Por favor ingresa un correo electrónico válido." required>
 							</div>
 						</div>
 						<div class="[ select ][ margin-bottom ]">
-							<select class="[ form-control ][ height-30 ][ no-border ][ bg-quaternary ][ color-light ]" name="instrument" placeholder="Instrumento" data-parsley-error-message="Por favor selecciona un instrumento" required>
+							<select class="[ form-control ][ height-30 ][ no-border ][ bg-quaternary ][ color-light ]" name="vacante" placeholder="vacante" data-parsley-error-message="Por favor selecciona un instrumento" required>
 								<option>Selecciona la vacante de tu intéres</option>
 								<option>Operadores  de  quinta  rueda</option>
 								<option>Auxiliar  administrativo</option>
 								<option>Otro</option>
 							</select>
 						</div>
-						<textarea class="[ form-control placeholder-light ][ no-border-radius no-border ][ bg-quaternary ][ color-light ]" rows="3"  placeholder="Mensaje"></textarea>
+						<textarea class="[ form-control placeholder-light ][ no-border-radius no-border ][ bg-quaternary ][ color-light ]" rows="3" name="mensaje" placeholder="Mensaje" data-parsley-error-message="Este campo es obligatorio" required></textarea>
+						
 						<a href=""><button type="submit" class="[ text-uppercase ][ margin-top ][ btn btn-secondary bg-primary btn-large ]">enviar</button></a>
 					</form>
 

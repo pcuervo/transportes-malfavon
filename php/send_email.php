@@ -2,13 +2,14 @@
 
 	$name = $_POST['nombre'];
 	$email = $_POST['correo'];
+	$vacante = $_POST['vacante'];
 	$contact_message = isset( $_POST['mensaje'] ) ? $_POST['mensaje'] : '-';
 
 	// Contacto Transportes Malfavon
-	$to = 'aris@pcuervo.com';
+	$to = 'recursoshumanos@larealmichoacana.com.mx';
 	$subject = 'Contacto página Transportes Malvafon';
 	$headers = "From: $name <$email>\r\n";
-	$headers .= "Reply-To: aris@pcuervo.com\r\n";
+	$headers .= "Reply-To: recursoshumanos@larealmichoacana.com.mx\r\n";
 	$headers .= "Return-Path: recursoshumanos@larealmichoacana.com.mx\r\n";
 	$headers .= "CC: aris@pcuervo.com\r\n";
 	$headers .= "BCC: aris@pcuervo.com\r\n";
@@ -17,7 +18,11 @@
 	$message = '<html><body>';
 	$message .= '<p>'.$name.' te ha contactado</p>';
 	$message .= '<p>Email: '. $email . '</p>';
+
+	if( $vacante != '' ) $message .= '<p>'.$name.' ha solicitado informes de la vacante: ' . $vacante . '</p>';
+	
 	if( $contact_message != '' ) $message .= '<p>Mensaje: '. $contact_message . '</p>';
+	
 	$message .= '</body></html>';
 
 	mail($to, $subject, $message, $headers );
